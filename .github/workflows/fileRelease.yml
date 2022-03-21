@@ -28,12 +28,12 @@ jobs:
           git config --global user.email "enriquemessias.souza@gmail.com"
           git config pull.rebase false
           git pull
-          rm -f release.zip
+          rm -f PixelmonMusicPack.zip
           
       - name: Archive Release
         uses: thedoctor0/zip-release@master
         with:
-          filename: 'release.zip'
+          filename: 'PixelmonMusicPack.zip'
           exclusions: '*.git* /*node_modules/* .editorconfig'
           
       - name: push changes to remote
